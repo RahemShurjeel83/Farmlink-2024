@@ -1,0 +1,120 @@
+.container-fluid {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px;
+}
+
+.back-link:hover {
+    color: var(--primary-color);
+}
+
+.back-icon {
+    padding: 10px;
+}
+
+.back {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.my-cart {
+    margin: 0px;
+    padding: 10px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.containter-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 8px;
+    position: relative;
+}
+
+.checkbox1,
+.checkbox2,
+.checkbox3 {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid var(--text-color);
+    width: 15px;
+    height: 15px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.checkbox1:checked,
+.checkbox2:checked,
+.checkbox3:checked {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.checkbox-details1 {
+    font-size: 0.85rem;
+    padding: 15px;
+    height: 100%;
+    line-height: 15px;
+}
+
+.checkbox-details2 {
+    font-size: 0.85rem;
+    padding: 15px;
+    height: 100%;
+    line-height: 15px;
+}
+
+.checkbox-details3 {
+    font-size: 0.85rem;
+    padding: 15px;
+    height: 90%;
+    line-height: 15px;
+}
+
+
+.payment-btn {
+    margin: 1.6rem 0.3rem 1rem 0.5rem;
+    width: 182px;
+    height: 45px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.payment-btn:hover {
+    color: var(--text-color);
+    background-color: var(--button-hover-color);
+    border: none;
+}
+
+.back-shop-btn {
+    margin: 1.6rem 0rem 1rem 0.3rem;
+    height: 45px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    color: var(--text-color);
+    background-color: var(--card-color);
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-shop-btn:hover {
+    background-color: rgba(0, 0, 0, 0.514);
+    border: none;
+}

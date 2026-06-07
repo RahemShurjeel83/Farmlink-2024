@@ -1,0 +1,250 @@
+.container-fluid {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.contact-title {
+    text-align: center;
+    padding: 2rem 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.contactus-container {
+    margin: 1.5rem auto 0 auto;
+    display: grid;
+    height: 100hv;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "contactus-img contactus-details";
+    text-align: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.082);
+}
+
+.contactus-img {
+    grid-area: contactus-img;
+    display: flex;
+    align-items: stretch;
+    padding: 2rem 1.5rem 2rem 0;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    object-fit: cover;
+    object-position: center 15%;
+    border-radius: 14px;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease-in-out;
+    cursor: zoom-in;
+}
+
+.img:hover {
+    transform: scale(1.02);
+}
+
+.contactus-details {
+    grid-area: contactus-details;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 2rem 1.5rem;
+}
+
+.contactus-name_email-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.contactus-name-container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0px 10px 0px;
+    width: auto;
+}
+
+.contactus-email {
+    height: 45px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    background: var(--card-color);
+}
+
+.contactus-name {
+    height: 45px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 8px;
+    background: var(--card-color);
+}
+
+.contactus-subject-container,
+.contactus-message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    position: relative;
+}
+
+.contactus-subject {
+    height: 45px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    text-transform: capitalize;
+    border-radius: 8px;
+    background: var(--card-color);
+}
+
+.contactus-message {
+    padding: 16px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 8px;
+    background: var(--card-color);
+}
+
+.contactus-message::first-letter{
+    text-transform: uppercase;
+}
+
+.contactus-label {
+    font-size: 1.2rem;
+    padding-bottom: 3px;
+}
+
+.contactus-star {
+    color: var(--primary-color);
+    padding: 5px;
+}
+
+.contactus-email:focus,
+.contactus-name:focus,
+.contactus-subject:focus,
+.contactus-message:focus {
+    background-color: var(--card-color);
+    outline-width: 1px;
+    outline-style: double;
+    outline-color: var(--primary-color);
+    outline-offset: 0px;
+    color: var(--text-color);
+}
+
+.send-btn {
+    margin: 1.6rem 0rem;
+    width: 100%;
+    height: 44px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+}
+
+.send-btn:hover {
+    background-color: var(--button-hover-color);
+    border: none;
+}
+
+@media (max-width:550px) {
+    .contactus-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "contactus-img" "contactus-details";
+    }
+
+    .contactus-subject-container,
+    .contactus-message-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contactus-name_email-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contactus-img {
+        padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+        align-items: center;
+    }
+    .contactus-details {
+        padding: 1rem 1.5rem 2rem 1.5rem;
+    }
+    .img {
+        width: 100%;
+        height: auto;
+        min-height: 220px;
+        object-fit: cover;
+    }
+    .contactus-name,
+    .contactus-email,
+    .contactus-subject,
+    .contactus-message{
+        width: 18rem;
+        margin: 3px 0px;
+    }
+    .send-btn {
+        width: 18rem;
+    }
+}
+
+@media (min-width:551px) and (max-width:1024px) {
+    .contactus-subject-container,
+    .contactus-message-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contactus-name_email-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contactus-img {
+        padding: 1.5rem 1rem 1.5rem 0;
+        align-items: stretch;
+    }
+    .contactus-details {
+        padding: 1.5rem 1rem 1.5rem 1rem;
+    }
+    .img {
+        width: 100%;
+        height: 100%;
+        min-height: 280px;
+        object-fit: cover;
+    }
+    .contactus-name,
+    .contactus-email,
+    .contactus-subject,
+    .contactus-message {
+        width: 18rem;
+        margin: 3px 0px;
+    }
+    .send-btn {
+        width: 18rem;
+    }
+}

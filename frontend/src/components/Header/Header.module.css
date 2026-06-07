@@ -1,0 +1,240 @@
+.items{
+  list-style: none;
+}
+
+.items .navItem, .logo, .action_btn{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  position: relative;
+}
+
+.navItem:after{
+  content: '';
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 5px;
+  height: 2px;
+  width: 0px;
+  left: 0;
+  bottom: -6px;
+  color: var(--primary-color);
+  transform: scaleX(0);
+  transition: 0.3s ease-in-out;
+}
+
+.navItem:hover:after{
+  width: 100%;
+}
+
+.navItem:hover::after{
+  transform: rotate(180deg);
+}
+
+ .logo:hover, .action_btn:hover, .active{
+  color: var(--primary-color);
+}
+
+/* Header Css */
+.header{
+  position: relative;
+  padding: 2rem;
+  background-color: var(--background-color);
+}
+
+.navBar{
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBar .logo{
+  width: 140px;
+  position: relative;
+}
+
+.brand-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+}
+
+.navBar .links{
+  display: flex;
+  gap: 2rem;
+}
+
+.navBar .toggle_btn{
+  color: var(--text-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.action_btn{
+  background-color: transparent;
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0px 2px;
+}
+
+.action_btn i:hover {
+  color: var(--primary-color);
+}
+
+.action_btn:hover{
+  /* background-color: var(--primary-color); */
+  /* color: var(--text-color); */
+}
+
+.action_btn:active{
+  scale: 0.95;
+}
+/* DropDoen Menu */
+
+.dropdown_menu{
+  display: none;
+  right: 2rem;
+  top: 70px;
+  width: 380px;
+  height: 0;
+  background: rgba(36, 34, 34, 0.671);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  margin: auto;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  visibility: hidden;
+  z-index: 20;
+  position: absolute;
+}
+
+.dropdown_menu.open{
+  height: 310px;
+  visibility: visible;
+}
+
+.dropdown_menu .items{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown_menu .action_btn{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+
+/*  Responsive Design */
+@media(max-width: 992px){
+  .navBar .links,
+  .navBar .action_btn{
+    display: none;
+  }
+  .navBar .toggle_btn{
+    display: block;
+  }
+  .dropdown_menu{
+    display: block;
+  }
+}
+
+@media(max-width: 576px){
+  .dropdown_menu{
+    left: 2rem;
+    width: unset;
+  }
+  .RR-logo{
+    margin: 0px;
+  }
+  .action_btn{
+    background-color: var(--primary-color);
+  }
+  .action_btn:hover{
+    background-color: var(--button-hover-color);
+    color: var(--text-color);
+  }
+}
+
+.login_popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #504a4a;
+  padding: 0px;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.close_popup {
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.close_popup_btn{
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.cart-login-container{
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 1.5px solid var(--border-color);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  line-height: 1;
+  padding: 0;
+}
+
+.theme-toggle:hover {
+  border-color: var(--primary-color);
+  transform: rotate(20deg);
+}
+
+@media (max-width:550px){
+  .login_popup{
+    width:85%;
+  }
+} 
+
+.cart-length{
+  position: absolute;
+  top: 0%;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius:50% ;
+  width: 20px;
+  height: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 900;
+}

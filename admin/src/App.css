@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins' sans-serif;
+  scroll-behavior: smooth;
+  background-color: var(--background-color);
+}
+::selection{
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+:root{
+  --primary-color:#ff5e14;
+  --card-color:#504a4aa4;
+  --white-color:#fff;
+  --black-color:#000;
+  --button-hover-color:#ad4d1c;
+  --background-color:#151414;
+}
+

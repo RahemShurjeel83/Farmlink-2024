@@ -1,0 +1,55 @@
+.product-head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    margin-top: 1.5rem;
+    background-color: var(--card-color);
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    padding: 1.5rem;
+}
+
+.product-img {
+    width: 16rem;
+    height: 16rem;
+    object-fit: cover;
+    border-radius: 0.9rem;
+    flex-shrink: 0;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.product-description {
+    color: var(--text-color);
+    max-width: 42rem;
+    line-height: 1.5;
+}
+
+.seller-count {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.seller-count i {
+    margin-right: 0.35rem;
+}
+
+.not-found {
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}

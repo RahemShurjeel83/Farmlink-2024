@@ -1,0 +1,134 @@
+.container {
+    background-color: var(--card-color);
+    border-radius: 1rem;
+}
+
+.grid-container {
+    margin: 2rem auto 0 auto;
+    text-align: center;
+    display: grid;
+    height: 100hv;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "img-container data-container";
+    position: relative;
+}
+
+.img-container {
+    grid-area: img-container;
+    margin: 1rem;
+    position: relative;
+}
+
+.data-container {
+    padding: 1rem;
+    text-align: start;
+    grid-area: data-container;
+}
+
+@media only screen and (max-width:550px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 1fr;
+        grid-template-areas: "img-container" "data-container";
+    }
+
+    .img-container {
+        margin: 0rem;
+    }
+
+    .data-container {
+        padding: 0rem;
+    }
+}
+
+.img {
+    width: 94%;
+    margin: 1rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease-in-out;
+    cursor: zoom-in;
+}
+
+.img-container:hover img {
+    transform: scale(1.1);
+}
+
+.addtocart-title {
+    padding-top: 20px;
+    font-size: 2.3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.addtocart-reviews {
+    font-size: 0.8rem;
+    line-height: 0.3rem;
+}
+
+.addtocart-new-price {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.addtocart-old-price {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.addtocart-details {
+    line-height: 1rem;
+    font-size: 0.8rem;
+}
+
+.addtocart-quantity {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.addtocart-qty-input {
+    border: none;
+    border-radius: 0.8rem;
+    outline: none;
+    width: 100px;
+    padding: 3px 15px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 5px 0px;
+}
+
+.addtocart-qty-input:focus {
+    background-color: var(--card-color);
+    outline-width: 2px;
+    outline-style: double;
+    outline-color: var(--primary-color);
+    outline-offset: 0px;
+    color: var(--text-color);
+}
+
+.addtocart-link {
+    text-decoration: none;
+    width: 200px;
+    height: 44px;
+}
+
+.addtocart-link-btn {
+    margin: 1rem 0.5rem;
+    width: 150px;
+    height: 44px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5rem;
+}
+
+.addtocart-link-btn:hover {
+    color: var(--text-color);
+    background-color: var(--button-hover-color);
+    border: none;
+}

@@ -1,0 +1,59 @@
+.grid {
+    background-color: var(--background-color);
+}
+
+.Dashboard-title {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+.logout-container {
+    padding: 16px;
+}
+
+.logout-container p:hover {
+    cursor: pointer;
+    color: var(--primary-color) !important;
+}
+
+.grid-container {
+    margin: 1rem auto 0 auto;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "category-filter product product product"
+        "category-filter product product product";
+    gap: 2rem;
+    margin: 20px;
+}
+
+.category-filter {
+    grid-area: category-filter;
+}
+
+.product {
+    grid-area: product;
+    background-color: var(--card-color);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    /* border: 1px solid var(--text-color); */
+}
+
+@media only screen and (max-width: 550px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Single column for smaller screens */
+        grid-template-rows: auto;
+        /* Adjust rows as per content */
+        grid-template-areas:
+            "category-filter"
+            "product"
+            "product"
+            "product";
+        gap: 0.2rem;
+    }
+}

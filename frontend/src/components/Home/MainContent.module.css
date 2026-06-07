@@ -1,0 +1,38 @@
+.grid-container {
+    margin: 5rem auto 0 auto;
+    text-align: center;
+    display: grid;
+    height: 100hv;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1.5fr;
+    grid-template-areas:
+        "special-offer trending-product trending-product trending-product"
+        "special-offer trending-product trending-product trending-product"
+        "special-offer trending-product trending-product trending-product"
+        "special-offer our-special our-special our-special";
+    grid-gap: 1.5rem;
+}
+
+.special-offer {
+    grid-area: special-offer;
+}
+
+.trending-product {
+
+    grid-area: trending-product;
+
+}
+
+.our-special {
+    grid-area: our-special;
+
+}
+
+@media only screen and (max-width:550px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 0.33fr;
+        grid-template-areas: "special-offer" "trending-product"  "our-special" ;
+    }
+
+}

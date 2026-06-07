@@ -1,0 +1,25 @@
+{
+  "short_name":"RR Farming Admin",
+  "name": "RR Farming Website Admin Panel",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "RR192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "RR512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

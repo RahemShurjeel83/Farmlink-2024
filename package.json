@@ -1,0 +1,6 @@
+{
+  "name": "farmlink-2024",
+  "dependencies": {
+    "mongodb": "^4.17.2"
+  }
+}

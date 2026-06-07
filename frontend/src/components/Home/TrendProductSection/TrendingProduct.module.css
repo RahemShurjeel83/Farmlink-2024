@@ -1,0 +1,11 @@
+.trending-products-div{
+    background-color: var(--card-color);
+    border-radius: 5rem;
+}
+
+.trending-products-title{
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.6rem;
+    font-weight: 600;
+}

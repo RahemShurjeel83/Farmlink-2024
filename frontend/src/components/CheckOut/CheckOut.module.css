@@ -1,0 +1,16 @@
+.get-discount{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 3px;
+    margin: 0px;
+}
+
+@media (max-width:550px){
+    .get-discount{
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+}

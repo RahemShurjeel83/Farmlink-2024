@@ -1,0 +1,90 @@
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 28rem;
+}
+
+.main .main-data{
+    margin: 0.5rem 1.2rem;
+}
+
+.main-title{
+    padding: 0 30px 2px 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.main-subtitle{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.input-field{
+    height: 45px;
+    width: 350px;
+    padding: 16px;
+    margin-top: 2.5rem;
+    outline: none;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.1rem;
+    background: var(--card-color);
+}
+
+.input-field:focus{
+    background-color: var(--card-color);
+    outline-width: 2px;
+    outline-style:double;
+    outline-color: var(--primary-color);
+    outline-offset: 0px;
+    color: var(--text-color);
+}
+
+.serach-icon{
+    margin-left: -30px;
+    color: gray;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.search-btn{
+    margin: 1.6rem 3rem;
+    width: 130px;
+    height: 44px;
+    font-size: 1.1rem;
+    font-weight:bold;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.search-btn:hover{
+    color: var(--text-color);
+    background-color: var(--button-hover-color);
+    border: none;
+}
+
+.div-rabbit-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+@media(max-width:800px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 50rem;
+    }
+    .search-btn{
+        width: 90vw;
+        margin: 1rem 0;
+    }
+    .input-field{
+        width: 90vw;
+    }
+}

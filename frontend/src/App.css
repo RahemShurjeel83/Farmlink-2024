@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ── Light theme (default) ── */
+:root {
+  --primary-color: #3bb77e;
+  --card-color: #ffffffcc;
+  --white-color: #fff;
+  --text-color: #1e2d1f;
+  --black-color: #000;
+  --button-hover-color: #1e965e;
+  --background-color: #f4fbf5;
+  --hero-bg: linear-gradient(135deg, #e8f8ee 0%, #f4fbf5 60%, #eaf6ef 100%);
+  --card-shadow: 0 2px 12px rgba(59, 183, 126, 0.10);
+  --border-color: #d4edda;
+}
+
+/* ── Dark theme ── */
+[data-theme="dark"] {
+  --primary-color: #4ecf8e;
+  --card-color: #1e2d22cc;
+  --white-color: #c8f0d8;
+  --text-color: #e2f0e6;
+  --black-color: #fff;
+  --button-hover-color: #38b07a;
+  --background-color: #0d1f12;
+  --hero-bg: linear-gradient(135deg, #0d1f12 0%, #142a1a 60%, #0f2318 100%);
+  --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  --border-color: #1e3a26;
+}
+
+body {
+  background-color: var(--background-color);
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(59,183,126,0.07) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 90%, rgba(59,183,126,0.05) 0%, transparent 50%);
+  min-height: 100vh;
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: #000;
+}

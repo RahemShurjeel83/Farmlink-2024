@@ -1,0 +1,88 @@
+.container-fluid {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.aboutus-title {
+    text-align: center;
+    padding: 2rem 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.aboutus-container {
+    margin: 1.5rem auto 0 auto;
+    display: grid;
+    height: 100hv;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "aboutus-img aboutus-details";
+    text-align: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.082);
+}
+
+.aboutus-img {
+    grid-area: aboutus-img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+}
+
+.img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    filter: drop-shadow(0 6px 24px rgba(0, 0, 0, 0.13));
+    transition: transform 0.3s ease-in-out;
+    cursor: zoom-in;
+}
+
+.img:hover {
+    transform: scale(1.04);
+}
+
+.aboutus-details {
+    grid-area: aboutus-details;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    padding: 2rem 2rem 2rem 1rem;
+    gap: 1rem;
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
+
+@media (max-width:550px) {
+    .aboutus-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "aboutus-img" "aboutus-details";
+    }
+    .aboutus-img {
+        justify-content: center;
+        padding: 2rem 1.5rem 0.5rem;
+    }
+    .img {
+        max-width: 260px;
+    }
+    .aboutus-details {
+        padding: 1rem 1.5rem 2rem;
+    }
+}
+
+@media (min-width:551px) and (max-width:1024px) {
+    .aboutus-img {
+        justify-content: center;
+    }
+    .img {
+        max-width: 260px;
+    }
+}

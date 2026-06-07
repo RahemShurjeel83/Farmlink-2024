@@ -1,0 +1,34 @@
+.community-container {
+    background-color: var(--card-color);
+    margin: 40px auto 0px auto;
+}
+
+.community-title {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 0.4rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.community-subtitle {
+    text-align: center;
+    color: var(--text-color);
+    opacity: 0.7;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width:550px) {
+    .community-container {
+        background-color: var(--card-color);
+        margin: 6px auto 0px auto;
+    }
+}

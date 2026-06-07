@@ -1,0 +1,32 @@
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
+# All node_modules
+**/node_modules/
+
+# All build output
+**/build/
+**/dist/
+
+# Environment files - never commit secrets
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Uploaded images (runtime files, not source)
+backend/public/Images/*
+!backend/public/Images/.gitkeep
+
+# Runtime PID dumps written by start scripts
+**/*_pid.txt

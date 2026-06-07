@@ -1,0 +1,126 @@
+.card {
+    background-color: var(--card-color);
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    padding: 1.1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(59, 183, 126, 0.18);
+}
+
+.farm-row {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.logo-fallback {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.farm-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.farm-name {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.farm-name:hover {
+    color: var(--primary-color);
+}
+
+.meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    font-size: 0.85rem;
+    color: var(--text-color);
+}
+
+.meta i {
+    color: var(--primary-color);
+    margin-right: 0.25rem;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: rgba(59, 183, 126, 0.12);
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.6rem;
+    border-radius: 2rem;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+    padding-top: 0.7rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.price {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.select-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.55rem 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.select-btn:hover:not(:disabled) {
+    opacity: 0.88;
+}
+
+.select-btn:disabled {
+    background-color: #b7c0b6;
+    cursor: not-allowed;
+}

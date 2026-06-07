@@ -1,0 +1,68 @@
+.like-card{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--background-color);
+    width: 23%;
+    border-radius: 1rem;
+    text-align: left;
+    margin: 0.8rem 0.5rem;
+}
+
+@media (max-width:550px){
+    .like-card{
+        width: 100%;
+        margin: 0.8rem 0rem;
+    }
+}
+@media screen and (min-width: 551px) and (max-width: 1000px) {
+    .like-card{
+        width: 45%;
+    }
+}
+
+.img-card{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+    height: 11rem;
+}
+
+.img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img:hover {
+    transform: scale(1.4);
+    cursor: zoom-in;
+}
+
+.like-card-details{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.like-card-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 15px 10px 0px 15px;
+}
+
+.like-card-icon{
+    align-self: self-start;
+    margin: 22px 15px 0px 5px;
+    color: var(--primary-color);
+}
+
+.like-card-price{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0px 10px 0px 15px;
+}

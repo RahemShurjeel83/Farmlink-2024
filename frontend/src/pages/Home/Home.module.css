@@ -1,0 +1,49 @@
+.container-fluid{
+    background-color:var(--background-color) ;
+    color: var(--text-color);
+}
+
+.whatsapp-link-div{
+    position: fixed;
+    top: 80%;
+    left: 95%;
+    transform: translate(-80%,-10%);
+    z-index: 2000;
+}
+
+.whatsapp-link{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.whatsapp-link:hover{
+    color: white;
+   
+}
+
+.whatsapp-img{
+    width: 7rem;
+    height: 7rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-img:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width:550px){
+    .whatsapp-img{
+        width: 5rem;
+        height: 5rem;
+        opacity: 0.8;
+    }
+
+    .whatsapp-link-div{
+        position: fixed;
+        top: 85%;
+        left: 90%;
+        transform: translate(-80%,-10%);
+        z-index: 2000;
+    }
+}

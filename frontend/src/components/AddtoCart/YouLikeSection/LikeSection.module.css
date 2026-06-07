@@ -1,0 +1,17 @@
+.container-fluid{
+    background-color:var(--card-color) ;
+    color: var(--text-color);
+    margin:60px 0px ;
+}
+
+@media (max-width:550px){
+    .container-fluid{
+        margin:40px 0px 0px 0px ;
+    }
+}
+
+.like-title{
+    text-align: center;
+    padding: 1.5rem 0rem;
+    font-size: 1.6rem;
+}

@@ -1,0 +1,7 @@
+.dashboard-data{
+    position: absolute;
+    padding: 30px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--white-color);
+}
